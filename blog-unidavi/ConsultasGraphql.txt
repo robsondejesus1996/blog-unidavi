@@ -1,0 +1,43 @@
+{
+  setting{
+    data{
+      id
+      attributes{
+        blogName
+      }
+    }
+  }
+}
+
+-------------------------------------
+query GET_SETTINGS {
+  setting{
+    data{
+      id
+      attributes{
+        blogName
+        blogDescription
+      }
+    }
+  }
+}
+------------------------------------
+query GET_SETTINGS {
+  setting{
+    data{
+      id
+      attributes{
+        blogName
+        blogDescription
+      }
+    }
+    
+  }
+  posts{
+    data{
+      attributes{
+        title
+      }
+    }
+  }
+}
