@@ -41,3 +41,129 @@ query GET_SETTINGS {
     }
   }
 }
+
+
+--------------------------------------------
+query GET_SETTINGS {
+  setting{
+    data{
+      id
+      attributes{
+        blogName
+        blogDescription
+        logo{
+          data{
+            attributes{
+              url
+            }
+          }
+        }
+      }
+    }
+    
+  }
+  posts{
+    data{
+      attributes{
+        title
+      }
+    }
+  }
+} 
+
+
+
+-------------------------------------------------------
+query GET_SETTINGS {
+  setting{
+    data{
+      id
+      attributes{
+        blogName
+        blogDescription
+        logo{
+          data{
+            id
+            attributes{
+              url
+            }
+          }
+        }
+        menuLink{
+          id
+          link
+          text
+          newTab
+        }
+      }
+    }
+    
+  }
+  posts{
+    data{
+      attributes{
+        title
+      }
+    }
+  }
+}
+
+
+----------------------------------------
+query GET_SETTINGS {
+  setting{
+    data{
+      id
+      attributes{
+        blogName
+        blogDescription
+        logo{
+          data{
+            id
+            attributes{
+              url
+            }
+          }
+        }
+        menuLink{
+          id
+          link
+          text
+          newTab
+        }
+        text
+      }
+    }
+    
+  }
+  posts{
+    data{
+      attributes{
+        title
+      }
+    }
+  }
+}
+------------------------------------
+query GET_POST{
+  post(id:2){
+    data{
+      attributes{
+        title
+      }
+      id
+    }
+  }
+}
+-----------------------------------
+query GET_POST($id: ID!){
+  post(id: $id){
+    data{
+      attributes{
+        title
+      }
+    }
+  }
+}
+
+----------------------------------
