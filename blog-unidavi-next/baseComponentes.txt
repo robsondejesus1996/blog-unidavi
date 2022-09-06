@@ -1,0 +1,48 @@
+------------------------------------------ index
+import P from 'prop-types';
+import * as Styled from './styles';
+
+export const TextComponent = ({ children }) => {
+  return <Styled.Container dangerouslySetInnerHTML={{ __html: children }} />;
+};
+
+TextComponent.propTypes = {
+  children: P.node.isRequired,
+};
+
+
+
+
+------------------------------------------- styles
+import styled, { css } from 'styled-components';
+
+export const Container = styled.div`
+  ${({ theme }) => css`
+    font-size: ${theme.font.sizes.medium};
+  `}
+`;
+------------------------------------------- stories
+import { TextComponent } from '../../src/components/TextComponent/';
+
+
+export default{
+    title: 'TextComponent/TextComponent',
+    component: TextComponent,
+    args: {
+      children: 'TextComponent',
+      
+    },
+    argTypes: {
+      children: { type: 'string' },
+     
+    },
+};
+
+
+export const Template = (args) => {
+    return (
+      <div>
+        <TextComponent {...args} />
+      </div>
+    );
+  };

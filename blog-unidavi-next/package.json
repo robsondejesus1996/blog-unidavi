@@ -13,11 +13,10 @@
   "dependencies": {
     "next": "12.2.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "styled-components": "^5.3.5"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.0",
+    "@babel/core": "^7.18.13",
     "@storybook/addon-actions": "^6.5.10",
     "@storybook/addon-essentials": "^6.5.10",
     "@storybook/addon-interactions": "^6.5.10",
@@ -26,14 +25,19 @@
     "@storybook/manager-webpack5": "^6.5.10",
     "@storybook/react": "^6.5.10",
     "@storybook/testing-library": "^0.0.13",
-    "@types/node": "18.7.15",
-    "@types/react": "18.0.18",
-    "@types/react-dom": "18.0.6",
-    "@types/styled-components": "^5.1.26",
+    "@styled-icons/material-outlined": "^10.28.0",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.7.1",
     "babel-loader": "^8.2.5",
     "eslint": "8.23.0",
     "eslint-config-next": "12.2.5",
     "eslint-plugin-storybook": "^0.6.4",
-    "typescript": "4.8.2"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.2",
+    "styled-components": "^5.3.5",
+    "web-vitals": "^1.1.0"
   }
 }
